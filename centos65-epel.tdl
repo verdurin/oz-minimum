@@ -1,5 +1,5 @@
 <template>
-   <name>centos-6.5-epel.x86_64</name>
+   <name>centos65-epel.x86_64</name>
    <description>CentOS 6.5 x86_64 template</description>
    <os>
       <name>CentOS-6</name>

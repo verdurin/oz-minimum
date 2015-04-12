@@ -1,0 +1,16 @@
+[paths]
+output_dir = %data_dir%/images
+data_dir = %data_dir%
+screenshot_dir = %data_dir%/screenshots
+
+[libvirt]
+uri = qemu:///system
+image_type = qcow2
+
+[cache]
+original_media = yes
+modified_media = no
+jeos = no
+
+[icicle]
+safe_generation = no
