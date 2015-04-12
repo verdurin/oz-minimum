@@ -1,0 +1,15 @@
+<template>
+   <name>centos71.x86_64</name>
+   <description>CentOS 7.1 x86_64 template</description>
+   <os>
+      <name>CentOS-7</name>
+      <version>1</version>
+      <arch>x86_64</arch>
+      <install type='url'>
+         <url>http://mirrors.kernel.org/centos/7/os/x86_64/</url>
+      </install>
+   </os>
+  <disk>
+    <size>6</size>
+  </disk>
+</template>

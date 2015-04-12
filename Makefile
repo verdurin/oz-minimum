@@ -1,4 +1,4 @@
-IMAGES = centos65 centos65-epel
+IMAGES = centos65 centos65-epel centos71
 
 OZ_CFG = oz.cfg
 DATA_DIR = ~/.oz
@@ -8,6 +8,7 @@ all: $(IMAGES)
 
 centos65: centos65.x86_64.qcow2
 centos65-epel: centos65-epel.x86_64.qcow2
+centos71: centos71.x86_64.qcow2
 
 $(OZ_CFG): $(OZ_CFG).in
 	sed 's#%data_dir%#$(DATA_DIR)#g' $^ > $@
