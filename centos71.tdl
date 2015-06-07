@@ -6,7 +6,7 @@
       <version>1</version>
       <arch>x86_64</arch>
       <install type='iso'>
-         <url>file:///home/adam/Downloads/CentOS-7-x86_64-DVD-1503-01.iso</url>
+         <iso>file:///home/adam/Downloads/CentOS-7-x86_64-DVD-1503-01.iso</iso>
       </install>
    </os>
   <disk>
