@@ -10,13 +10,13 @@ repo --name="repo3" --baseurl=https://repos.fedorapeople.org/repos/openstack/ope
 # Firewall configuration
 firewall --enabled --service=ssh
 # Root password
-rootpw --iscrypted --lock $1$2e74e5$wMj25e4rEb4rJxqm7BAnk0
+rootpw --iscrypted --lock $6$NdayUKYBuM8nG2bj$srJWOWi6wIiEWFaYBg08QnqiCgwQbno4uefHFQv8DZQ8924yXSs0s8GrT0dBk4xgSnD2DRyXQRs9k9xWmKysg1
 # System authorization information
-auth --useshadow --enablemd5
+auth --useshadow --passalgo=sha512
 # System keyboard
-keyboard us
+keyboard uk
 # System language
-lang en_US.UTF-8
+lang en_GB.UTF-8
 # SELinux configuration
 selinux --permissive
 # Installation logging level
@@ -26,7 +26,7 @@ reboot
 # System services
 services --disabled="avahi-daemon,iscsi,iscsid,firstboot,kdump" --enabled="network,sshd,rsyslog,tuned"
 # System timezone
-timezone --isUtc Asia/Tokyo
+timezone --isUtc Europe/London
 # Network information
 network  --bootproto=dhcp --device=eth0 --onboot=on
 # System bootloader configuration
@@ -154,6 +154,7 @@ rootfiles
 rpm
 rsync
 rsyslog
+screen
 selinux-policy
 selinux-policy-targeted
 sendmail
@@ -164,7 +165,7 @@ syslinux
 tar
 tuned
 util-linux-ng
-vim-minimal
+vim-enhanced
 yum
 yum-metadata-parser
 -*-firmware
